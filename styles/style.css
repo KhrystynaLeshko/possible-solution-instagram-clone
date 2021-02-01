@@ -1,0 +1,137 @@
+/*
+Colors to use:
+dark blue: #06365f
+light blue: #1c5380
+*/
+
+/*! Begin Style Resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+button {
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bgtile {
+  background-image: linear-gradient(#47749a, #305f87);
+  height: 300px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: -20% auto 2em;
+}
+
+.col-left {
+  max-width: 300px;
+}
+
+.col-right {
+  max-width: 450px;
+}
+
+.btn-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 105px;
+  background-image: linear-gradient(#6993b3, #42749c);
+  color: #fff;
+  font-weight: 600;
+  max-height: 40px;
+  padding: 1em 0.7em;
+  border: 1px solid #215682;
+  border-radius: 2px;
+}
+
+.btn-login > img {
+  max-width: 25px;
+  margin-right: 1em;
+}
+
+.row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.2em;
+}
+
+.brand {
+  max-width: 300px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 1.5em;
+}
+
+.card > h2 {
+  color: #05355e;
+}
+
+.card > p {
+  margin-top: 1em;
+}
+
+.card > p:last-of-type {
+  margin-bottom: 1em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3em;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+footer a {
+  color: #517fa4;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 0.9em;
+  color: #acacad;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 730px) {
+  main {
+    justify-content: center;
+  }
+
+  .col-left {
+    display: none;
+  }
+
+  footer {
+    font-size: 0.7rem;
+  }
+}
